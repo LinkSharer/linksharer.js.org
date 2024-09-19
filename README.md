@@ -1,6 +1,6 @@
 # [Linksharer.js.org](https://linksharer.js.org)
 
-[![Node CI](https://github.com/LinkSharer/linksharer.js.org/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://github.com/LinkSharer/LinkSharer.js.org/actions?query=workflow:%22Deploy%20to%20GitHub%20Pages%22)
+[![CI](https://github.com/LinkSharer/linksharer.js.org/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)](https://github.com/LinkSharer/LinkSharer.js.org/actions?query=workflow:%22Deploy%20to%20GitHub%20Pages%22)
 
 [**To get started, create a repository →**](https://github.com/LinkSharer/LinkSharer/generate)
 
