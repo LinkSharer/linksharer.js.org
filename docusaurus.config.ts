@@ -161,7 +161,7 @@ const config: Config = {
     },
     scripts: [
       {
-        url: "https://scripts.simpleanalyticscdn.com/latest.js",
+        src: "https://scripts.simpleanalyticscdn.com/latest.js",
         defer: true,
         async: true,
       },
