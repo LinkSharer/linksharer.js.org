@@ -21,19 +21,22 @@ Here's a list of standard templates you can use:
 - **minimal-blue**: minimal design based on blue.
 
 ## Custom Templates
+
 You're welcome to create your custom template, either starting from one of the [available standard templates](#available-standard-templates) or creating one from scratch.
 
-
 ### Usage
+
 Add the url to the template in the [`template` field](configuration).
 Plase note that all the required css variables must be provided in your the template.
 
 ### Example
+
 ```css title="static/myCustomTemplate.css"
 :root {
-  ...
+  ...;
 }
 ```
+
 ```ts title="user/config.ts"
 const config: Config = {
   template: 'myCustomTemplate.css',
