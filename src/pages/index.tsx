@@ -43,6 +43,7 @@ export default function Home(): JSX.Element {
       <main>
         <HomepageFeatures />
       </main>
+      <script src='https://scripts.simpleanalyticscdn.com/latest.js' async defer></script>
     </Layout>
   );
 }
