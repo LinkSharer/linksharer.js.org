@@ -20,11 +20,11 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Fully Customizable',
-    Gif: require('@site/static/img/customize.png').default,
+    title: 'Analytics',
+    Gif: require('@site/static/img/analytics.png').default,
     description: (
       <>
-        We offer some css templates you can use but you can always create your own!
+        Lightweight Privacy-first <a href="docs/analytics">analytics</a> can be included too! 
       </>
     ),
   },
