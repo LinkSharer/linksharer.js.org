@@ -38,6 +38,7 @@ Here's a list of available confuguration fields:
 | url    | string | The social's url.                                                                       |
 | icon   | string | The social's icon. Use [Fontawesome's Icons](https://fontawesome.com/search?o=r&m=free) |
 | target | string | _Optional_. The target of the anchor element. Default's `self`.                         |
+| name   | string | _Optional_. The name of the url, will be used as `aria-label`.                          |
 
 ## Link
 
