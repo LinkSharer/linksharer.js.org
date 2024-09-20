@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            href="https://demo.linksharer.js.org">
+            href="https://demo.linksharer.js.org?utm_source=docs&utm_medium=button&utm_campaign=landing_page&utm_content=example_link">
             Example Website
           </Link>
           <Link
