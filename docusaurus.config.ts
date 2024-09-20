@@ -159,6 +159,14 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    clientModules: ['./simpleanalytics.js'],
+    scripts: [
+      {
+        url: "https://scripts.simpleanalyticscdn.com/latest.js",
+        defer: true,
+        async: true,
+      },
+    ]
   } satisfies Preset.ThemeConfig,
 };
 
