@@ -19,6 +19,7 @@ Add `@{templateName}` in the [`template` field](configuration) where `{templateN
 Here's a list of standard templates you can use:
 
 - **minimal-blue**: minimal design based on blue.
+- **minimal-monochrome**: minimal design based on black and white (and shades of gray).
 
 ## Custom Templates
 
