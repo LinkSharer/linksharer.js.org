@@ -24,7 +24,8 @@ const FeatureList: FeatureItem[] = [
     Gif: require('@site/static/img/analytics.png').default,
     description: (
       <>
-        Lightweight Privacy-first <a href="docs/analytics">analytics</a> can be included too! 
+        Lightweight Privacy-first <a href="docs/analytics">analytics</a> can be included too!
+        Look at the <a href="https://dashboard.simpleanalytics.com/demo.linksharer.js.org" rel="noopener noreferrer external">Example Website's analytics</a>
       </>
     ),
   },
