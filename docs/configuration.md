@@ -46,8 +46,8 @@ Here's a list of available confuguration fields:
 | Field    | Type    | Description                                                                                    |
 | -------- | ------- | ---------------------------------------------------------------------------------------------- |
 | name     | string  | The name of the link.                                                                          |
-| url      | string  | The social's url.                                                                              |
-| icon     | string  | The social's icon. Use [Fontawesome's Icons](https://fontawesome.com/search?o=r&m=free)        |
+| url      | string  | The link's url.                                                                              |
+| icon     | string  | The link's icon. Use [Fontawesome's Icons](https://fontawesome.com/search?o=r&m=free)        |
 | target   | string  | _Optional_. The target of the anchor element. Default's `self`.                                |
 | sameAs   | boolean | _Optional_. Whether `itemprop="sameAs"` should be included in the HTML element or not.         |
 | privacy  | boolean | _Optional_. Whether `rel="noopener noreferrer"` should be included in the HTML element or not. |
