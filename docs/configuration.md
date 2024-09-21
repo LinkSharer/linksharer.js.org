@@ -6,16 +6,17 @@ sidebar_position: 2
 
 Here's a list of available confuguration fields:
 
-| Field     | Type                       | Description                                                                 |
-| --------- | -------------------------- | --------------------------------------------------------------------------- |
-| template  | string                     | The url of the CSS template.                                                |
-| cname     | string                     | _Optional_. The `CNAME`.                                                    |
-| seo       | [SEO](#seo)                | SEO configurations.                                                         |
-| user      | [User](#user)              | User configurations.                                                        |
-| links     | Array of [Link](#link)     | A list of links/resources.                                                  |
-| socials   | Array of [Social](#social) | _Optional_. A list of socials to display after the links.                   |
-| analytics | boolean                    | _Optional_. Whether [analytics](analytics) should be enabled or not. Default's to false. |
-| credits   | boolean                    | _Optional_. Whether the credits should be displayed or not.                 |
+| Field     | Type                       | Description                                                                           |
+| --------- | -------------------------- | ------------------------------------------------------------------------------------- |
+| template  | string                     | The url of the CSS template.                                                          |
+| cname     | string                     | _Optional_. The `CNAME`.                                                              |
+| seo       | [SEO](#seo)                | SEO configurations.                                                                   |
+| user      | [User](#user)              | User configurations.                                                                  |
+| links     | Array of [Link](#link)     | A list of links/resources.                                                            |
+| socials   | Array of [Social](#social) | _Optional_. A list of socials to display after the links.                             |
+| analytics | boolean                    | _Optional_. Whether [analytics](analytics) should be enabled or not. Default's false. |
+| scripts   | Array of [Script](#script) | _Optional_. A list of scripts to be included in the page.                             |
+| credits   | boolean                    | _Optional_. Whether the credits should be displayed or not. Default's true.           |
 
 ## User
 
@@ -43,12 +44,20 @@ Here's a list of available confuguration fields:
 
 ## Link
 
-| Field    | Type    | Description                                                                                    |
-| -------- | ------- | ---------------------------------------------------------------------------------------------- |
-| name     | string  | The name of the link.                                                                          |
-| url      | string  | The link's url.                                                                              |
-| icon     | string  | The link's icon. Use [Fontawesome's Icons](https://fontawesome.com/search?o=r&m=free)        |
-| target   | string  | _Optional_. The target of the anchor element. Default's `self`.                                |
-| sameAs   | boolean | _Optional_. Whether `itemprop="sameAs"` should be included in the HTML element or not.         |
-| privacy  | boolean | _Optional_. Whether `rel="noopener noreferrer"` should be included in the HTML element or not. |
-| external | boolean | _Optional_. Whether `rel="external"` should be included in the HTML element or not.            |
+| Field    | Type    | Description                                                                                                     |
+| -------- | ------- | --------------------------------------------------------------------------------------------------------------- |
+| name     | string  | The name of the link.                                                                                           |
+| url      | string  | The link's url.                                                                                                 |
+| icon     | string  | The link's icon. Use [Fontawesome's Icons](https://fontawesome.com/search?o=r&m=free)                           |
+| target   | string  | _Optional_. The target of the anchor element. Default's `self`.                                                 |
+| sameAs   | boolean | _Optional_. Whether `itemprop="sameAs"` should be included in the HTML element or not. Default's false.         |
+| privacy  | boolean | _Optional_. Whether `rel="noopener noreferrer"` should be included in the HTML element or not. Default's false. |
+| external | boolean | _Optional_. Whether `rel="external"` should be included in the HTML element or not. Default's false.            |
+
+## Script
+
+| Field | Type    | Description                                                                                       |
+| ----- | ------- | ------------------------------------------------------------------------------------------------- |
+| src   | string  | The `src` attribute of the `<script` tag                                                          |
+| head  | boolean | _Optional_. Whether the script should be in the `<head>` or in the `<body>` tag. Default's false. |
+| ...   | any     | _Optional_. Any other key-value pair to add as attributes to the `<script>` tag.                  |
