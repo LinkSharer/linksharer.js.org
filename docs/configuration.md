@@ -6,17 +6,18 @@ sidebar_position: 2
 
 Here's a list of available confuguration fields:
 
-| Field     | Type                       | Description                                                                           |
-| --------- | -------------------------- | ------------------------------------------------------------------------------------- |
-| template  | string                     | The url of the CSS template.                                                          |
-| cname     | string                     | _Optional_. The `CNAME`.                                                              |
-| seo       | [SEO](#seo)                | SEO configurations.                                                                   |
-| user      | [User](#user)              | User configurations.                                                                  |
-| links     | Array of [Link](#link)     | A list of links/resources.                                                            |
-| socials   | Array of [Social](#social) | _Optional_. A list of socials to display after the links.                             |
-| analytics | boolean                    | _Optional_. Whether [analytics](analytics) should be enabled or not. Default's false. |
-| scripts   | Array of [Script](#script) | _Optional_. A list of scripts to be included in the page.                             |
-| credits   | boolean                    | _Optional_. Whether the credits should be displayed or not. Default's true.           |
+| Field     | Type                       | Description                                                                                                   |
+| --------- | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| template  | string                     | The url of the CSS template.                                                                                  |
+| i18n      | string                     | Internalization strings. Use one of [these](https://github.com/LinkSharer/LinkSharer/tree/main/src/lib/i18n). |
+| cname     | string                     | _Optional_. The `CNAME`.                                                                                      |
+| seo       | [SEO](#seo)                | SEO configurations.                                                                                           |
+| user      | [User](#user)              | User configurations.                                                                                          |
+| links     | Array of [Link](#link)     | A list of links/resources.                                                                                    |
+| socials   | Array of [Social](#social) | _Optional_. A list of socials to display after the links.                                                     |
+| analytics | boolean                    | _Optional_. Whether [analytics](analytics) should be enabled or not. Default's false.                         |
+| scripts   | Array of [Script](#script) | _Optional_. A list of scripts to be included in the page.                                                     |
+| credits   | boolean                    | _Optional_. Whether the credits should be displayed or not. Default's true.                                   |
 
 ## User
 
