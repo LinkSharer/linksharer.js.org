@@ -6,54 +6,61 @@ sidebar_position: 2
 
 Here's a list of available confuguration fields:
 
-| Field     | Type                       | Description                                                                                                   |
-| --------- | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| template  | string                     | The url of the CSS template.                                                                                  |
-| i18n      | string                     | Internalization strings. Use one of [these](https://github.com/LinkSharer/LinkSharer/tree/main/src/lib/i18n). |
-| cname     | string                     | _Optional_. The `CNAME`.                                                                                      |
-| seo       | [SEO](#seo)                | SEO configurations.                                                                                           |
-| user      | [User](#user)              | User configurations.                                                                                          |
-| links     | Array of [Link](#link)     | A list of links/resources.                                                                                    |
-| socials   | Array of [Social](#social) | _Optional_. A list of socials to display after the links.                                                     |
-| analytics | boolean                    | _Optional_. Whether [analytics](analytics) should be enabled or not. Default's false.                         |
-| scripts   | Array of [Script](#script) | _Optional_. A list of scripts to be included in the page.                                                     |
-| credits   | boolean                    | _Optional_. Whether the credits should be displayed or not. Default's true.                                   |
+| Field                  | Type                       | Description                                                                                                                                                                                         |
+| ---------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| template               | string                     | The url of the CSS template.                                                                                                                                                                        |
+| i18n                   | string                     | Internalization strings. Use one of [these](https://github.com/LinkSharer/LinkSharer/tree/main/src/lib/i18n).                                                                                       |
+| cname                  | string                     | _Optional_. The `CNAME`.                                                                                                                                                                            |
+| seo                    | [SEO](#seo)                | SEO configurations.                                                                                                                                                                                 |
+| user                   | [User](#user)              | User configurations.                                                                                                                                                                                |
+| links                  | Array of [Link](#link)     | A list of links/resources.                                                                                                                                                                          |
+| socials                | Array of [Social](#social) | _Optional_. A list of socials to display after the links.                                                                                                                                           |
+| analytics              | boolean                    | _Optional_. Whether [analytics](analytics) should be enabled or not. Default's false.                                                                                                               |
+| googleSiteVerification | string                     | _Optional_. A Google site verification meta tag. Look at [this resource](https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag) to know how to generate one. |
+| scripts                | Array of [Script](#script) | _Optional_. A list of scripts to be included in the page.                                                                                                                                           |
+| credits                | boolean                    | _Optional_. Whether the credits should be displayed or not. Default's true.                                                                                                                         |
 
 ## User
 
-| Field  | Type   | Description                                         |
-| ------ | ------ | --------------------------------------------------- |
-| name   | string | The name to be displayed in the user's information. |
-| bio    | string | A short description of the website.                 |
-| avatar | string | The url to the user's avatar.                       |
+| Field | Type   | Description                                         |
+| ----- | ------ | --------------------------------------------------- |
+| name  | string | The name to be displayed in the user's information. |
+| bio   | string | A short description of the website.                 |
+
+You can change the avatar displayed in the main page by adding your own `user/avatar.png`.
 
 ## SEO
 
-| Field       | Type   | Description                |
-| ----------- | ------ | -------------------------- |
-| title       | string | The website's title.       |
-| description | string | The website's description. |
+| Field       | Type               | Description                                    |
+| ----------- | ------------------ | ---------------------------------------------- |
+| title       | string             | The website's title.                           |
+| description | string             | The website's description.                     |
+| canonical   | string             | _Optional_. A canonical tag for the main page. |
+| og          | Array of key-value | _Optional_. OpenGraph configuration.           |
+| twitter     | Array of key-value | _Optional_. Twitter configuration.             |
 
 ## Social
 
-| Field  | Type   | Description                                                                             |
-| ------ | ------ | --------------------------------------------------------------------------------------- |
-| url    | string | The social's url.                                                                       |
-| icon   | string | The social's icon. Use [Fontawesome's Icons](https://fontawesome.com/search?o=r&m=free) |
-| target | string | _Optional_. The target of the anchor element. Default's `self`.                         |
-| name   | string | _Optional_. The name of the url, will be used as `aria-label`.                          |
+| Field  | Type           | Description                                                                             |
+| ------ | -------------- | --------------------------------------------------------------------------------------- |
+| url    | string         | The social's url.                                                                       |
+| icon   | IconDefinition | The social's icon. Use [Fontawesome's Icons](https://fontawesome.com/search?o=r&m=free) |
+| target | string         | _Optional_. The target of the anchor element. Default's `self`.                         |
+| name   | string         | _Optional_. The name of the url, will be used as `aria-label`.                          |
 
 ## Link
 
-| Field    | Type    | Description                                                                                                     |
-| -------- | ------- | --------------------------------------------------------------------------------------------------------------- |
-| name     | string  | The name of the link.                                                                                           |
-| url      | string  | The link's url.                                                                                                 |
-| icon     | string  | The link's icon. Use [Fontawesome's Icons](https://fontawesome.com/search?o=r&m=free)                           |
-| target   | string  | _Optional_. The target of the anchor element. Default's `self`.                                                 |
-| sameAs   | boolean | _Optional_. Whether `itemprop="sameAs"` should be included in the HTML element or not. Default's false.         |
-| privacy  | boolean | _Optional_. Whether `rel="noopener noreferrer"` should be included in the HTML element or not. Default's false. |
-| external | boolean | _Optional_. Whether `rel="external"` should be included in the HTML element or not. Default's false.            |
+| Field    | Type           | Description                                                                                                     |
+| -------- | -------------- | --------------------------------------------------------------------------------------------------------------- |
+| name     | string         | The name of the link.                                                                                           |
+| url      | string         | The link's url.                                                                                                 |
+| icon     | IconDefinition | The link's icon. Use [Fontawesome's Icons](https://fontawesome.com/search?o=r&m=free)                           |
+| target   | string         | _Optional_. The target of the anchor element. Default's `self`.                                                 |
+| sameAs   | boolean        | _Optional_. Whether `itemprop="sameAs"` should be included in the HTML element or not. Default's false.         |
+| privacy  | boolean        | _Optional_. Whether `rel="noopener noreferrer"` should be included in the HTML element or not. Default's false. |
+| external | boolean        | _Optional_. Whether `rel="external"` should be included in the HTML element or not. Default's false.            |
+| display  | boolean        | _Optional_. Set this to false to not display the link in the list. Default's true.                              |
+| short    | string         | _Optional_. A shorter version of the url.                                                                       |
 
 ## Script
 
