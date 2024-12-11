@@ -8,7 +8,6 @@ Here's a list of available confuguration fields:
 
 | Field                  | Type                       | Description                                                                                                                                                                                         |
 | ---------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| template               | string                     | The url of the CSS template.                                                                                                                                                                        |
 | i18n                   | string                     | Internalization strings. Use one of [these](https://github.com/LinkSharer/LinkSharer/tree/main/src/lib/i18n).                                                                                       |
 | cname                  | string                     | _Optional_. The `CNAME`.                                                                                                                                                                            |
 | seo                    | [SEO](#seo)                | SEO configurations.                                                                                                                                                                                 |
