@@ -44,4 +44,4 @@ The `user/config.ts` file is used as the central configuration store.
 In that file, you can specify all the links and resources to share.
 For more information, visit [Configuration](/docs/configuration).
 
-Then, your status page may be hosted on https://user.github.io/repo/, where user is your GitHub username and repo is your repository name or to the specified `CNAME` if you provided one.
+Then, your LinkSharer page may be hosted on https://user.github.io/repo/, where user is your GitHub username and repo is your repository name or to the specified `cname` if you provided one (see [configuration](/docs/configuration)).
