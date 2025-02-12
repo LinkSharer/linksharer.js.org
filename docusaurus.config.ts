@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const githubOrg = "https://github.com/LinkSharer";
 const githubUrl = `${githubOrg}/LinkSharer`;
-const demoUrl = "https://demo.linkshare.js.org?utm_source=docs&utm_campaign=landing_page&utm_medium=";
+const demoUrl = "https://demo.linksharer.js.org?utm_source=docs&utm_campaign=landing_page&utm_medium=";
 
 const config: Config = {
   title: 'Link Sharer',
